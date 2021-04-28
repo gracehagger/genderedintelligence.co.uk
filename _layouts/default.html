@@ -16,7 +16,7 @@
 <body>
 	<div class="container">
 		<a href="login.html" class="login-corner">&nbsp;</a>
-		<h1><a href="index.html"><img src="/static/images/logo.gif" width="270" height="60" alt="Gendered Intelligence: Understanding diversity in creative ways"></a></h1>
+		<h1><a href="/index.html"><img src="/static/images/logo.gif" width="270" height="60" alt="Gendered Intelligence: Understanding diversity in creative ways"></a></h1>
 
 		<div class="navbar">
 			<div class="navbar-inner">
@@ -27,423 +27,42 @@
 				</a>
 				<div class="nav-collapse collapse" style="height: 0px; ">
 					<ul class="nav">
-						<li class=" active">
-							<a href="index.html">
+						{% for item in site.data.navigation %}
+							{% if item.subnav %}
+								<li class="dropdown">
+								<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+							{% else %}
+								<li>
+							{% endif %}
+								{% if item.url %}<a href="/{{ item.url }}">{% endif %}
+										{{ item.page }}
+										{% if item.icon %}<i class="{{item.icon}}"></i>{% endif %}
+								{% if item.url %}</a>{% endif %}
 
-								Home
-							</a>
-						</li>
-						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-
-								What's new
-								<i class="icon-chevron-down"></i>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="latest.html">
-									Latest News
-								</a>
+								{% if item.subnav %}
+										<i class="icon-chevron-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										{% for subitem in item.subnav %}
+											<li>
+												{% if subitem.url contains "http" %}
+												<a href="{{ subitem.url }}" target="_blank">
+													{% else %}
+												<a href="/{{ subitem.url }}">
+													{% endif %}
+													{% if subitem.icon %}<i class="{{subitem.icon}} pull-right"></i>{% endif %}
+													{{ subitem.page }}
+												</a>
+											</li>
+										{% endfor %}
+									</ul>
+								{% endif %}
 							</li>
-							<li><a href="https://genderedintelligence.wordpress.com/">
-								Blog
-							</a>
-						</li>
-						<li><a href="awarenessdays.html">
-							Awareness Days
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li class="dropdown">
-				<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-
-					Support Us
-					<i class="icon-chevron-down"></i>
-				</a>
-				<ul class="dropdown-menu">
-					<li><a href="support-us/donate.html">
-						<i class="icon-gift pull-right"></i>
-						Donate
-					</a>
-				</li>
-				<li><a href="support-us/volunteer.html">
-					<i class="icon-heart pull-right"></i>
-					Volunteer
-				</a>
-			</li>
-			<li><a href="support-us/youthgroupvolunteer.html">
-				Youth Group Volunteer
-			</a>
-		</li>
-		<li><a href="support-us/funding.html">
-			Funding
-		</a>
-	</li>
-</ul>
-</li>
-<li class="dropdown">
-	<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-
-		COVID-19
-		<i class="icon-chevron-down"></i>
-	</a>
-	<ul class="dropdown-menu">
-		<li><a href="resources/covid19.html">
-			<i class="icon-star pull-right"></i>
-			Resources Hub
-		</a>
-	</li>
-	<li><a href="covid19/index.html">
-		Updates
-	</a>
-</li>
-</ul>
-</li>
-<li class="dropdown">
-	<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-
-		Campaigns
-		<i class="icon-chevron-down"></i>
-	</a>
-	<ul class="dropdown-menu">
-		<li><a href="ourcampaigns.html">
-			Our Campaigns
-		</a>
-	</li>
-	<li><a href="campaigns/baeb.html">
-		BAEB
-	</a>
-</li>
-<li><a href="briefings.html">
-	Briefings and guides
-</a>
-</li>
-<li><a href="facingequality.html">
-	Facing Equality
-</a>
-</li>
-<li><a href="gra/whatnow.html">
-	Trans Writes! (Gender Recognition Act)
-</a>
-</li>
-<li><a href="trusstus/write.html">
-	#TRUSSTME - don't roll back on trans rights
-</a>
-</li>
-<li><a href="campaigns/wesc2020.html">
-	Women and Equalities Inquiry into the Gender Recognition Act
-</a>
-</li>
-<li><a href="gra/ourresponse.html">
-	Our responses to the GRA
-</a>
-</li>
-</ul>
-</li>
-<li class="dropdown">
-	<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-
-		❤ Young People & Families
-		<i class="icon-chevron-down"></i>
-	</a>
-	<ul class="dropdown-menu">
-		<li><a href="support/trans-youth.html">
-			<i class="icon-star pull-right"></i>
-			Support for Young People
-		</a>
-	</li>
-	<li><a href="trans-youth/youth-group.html">
-		Youth Groups for Young Trans and Gender Variant People
-	</a>
-</li>
-<li><a href="trans-youth/resources.html">
-	Resources for Young People
-</a>
-</li>
-<li><a href="camping.html">
-	Camping Trips
-</a>
-</li>
-<li><a href="families/group.html">
-	Support for Families
-</a>
-</li>
-<li><a href="support/families-resources.html">
-	Resources for Families
-</a>
-</li>
-<li><a href="parent-workshop.html">
-	Parents' Workshop
-</a>
-</li>
-<li><a href="support/education-schools.html">
-	Support for Teachers and Schools
-</a>
-</li>
-<li><a href="residential-resource.html">
-	NEW Residential Resource
-</a>
-</li>
-</ul>
-</li>
-<li class="dropdown">
-	<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-
-		For Professionals
-		<i class="icon-chevron-down"></i>
-	</a>
-	<ul class="dropdown-menu">
-		<li><a href="professionals/overview.html">
-			Overview of Services
-		</a>
-	</li>
-	<li><a href="professionals/policy.html">
-		Consultancy - Trans Inclusion and Equality
-	</a>
-</li>
-<li><a href="onlinecourses.html">
-	Online training and remote services
-</a>
-</li>
-<li><a href="professionals/training.html">
-	Training
-</a>
-</li>
-<li><a href="professionals/speakers.html">
-	Speakers and Panellists
-</a>
-</li>
-<li><a href="professionals/education.html">
-	Education & Other Youth Settings
-</a>
-</li>
-<li><a href="professionals/mentoring.html">
-	Mentoring Scheme
-</a>
-</li>
-<li><a href="professionals/partnerships.html">
-	Partnerships
-</a>
-</li>
-<li><a href="sport.html">
-	Sport and Physical Activity
-</a>
-</li>
-<li><a href="for-professionals/resources.html">
-	<i class="icon-book pull-right"></i>
-	Resources
-</a>
-</li>
-<li><a href="professionals/mailinglist.html">
-	<i class="icon-envelope-alt pull-right"></i>
-	Professional Services Mailing List
-</a>
-</li>
-</ul>
-</li>
-<li class="dropdown">
-	<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-
-		Educational Settings
-		<i class="icon-chevron-down"></i>
-	</a>
-	<ul class="dropdown-menu">
-		<li><a href="support/education-schools.html">
-			<i class="icon-book pull-right"></i>
-			Overview
-		</a>
-	</li>
-	<li><a href="professionals/schools-and-youth-services/creative-workshops.html">
-		Workshops and Assemblies
-	</a>
-</li>
-<li><a href="professionals/mentoring.html">
-	Mentoring
-</a>
-</li>
-<li><a href="education/training.html">
-	Training
-</a>
-</li>
-<li><a href="education/professional-consultancy.html">
-	Professional Consultancy
-</a>
-</li>
-</ul>
-</li>
-<li class="dropdown">
-	<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-
-		Projects
-		<i class="icon-chevron-down"></i>
-	</a>
-	<ul class="dropdown-menu">
-		<li><a href="projects/supportline.html">
-			Support Line
-		</a>
-	</li>
-	<li><a href="AdventuresTimeGender.html">
-		Adventures in Time and Gender
-	</a>
-</li>
-<li><a href="projects/kip.html">
-	Knowledge is Power
-</a>
-</li>
-<li><a href="projects/GIANTS.html">
-	GIANTS
-</a>
-</li>
-<li><a href="projects/transacting.html">
-	TransActing
-</a>
-</li>
-<li><a href="projects/the-corpse-project.html">
-	The Corpse Project
-</a>
-</li>
-<li><a href="quality-of-life-survey.html">
-	Quality of Life Survey
-</a>
-</li>
-<li><a href="projects/collective-resilience.html">
-	Collective Resilience: 18-30 Therapy Group
-</a>
-</li>
-<li><a href="project/trans-inclusion-in-sport.html">
-	Trans Inclusion in Sport
-</a>
-</li>
-<li><a href="projects/iof2020.html">
-	Imagining Our Futures 2020
-</a>
-</li>
-<li><a href="transvengers.html">
-	Transvengers at the Wellcome Collection
-</a>
-</li>
-<li><a href="projects/project-list.html">
-	Previous Projects
-</a>
-</li>
-</ul>
-</li>
-<li class="dropdown">
-	<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-
-		Therapists and Counsellors
-		<i class="icon-chevron-down"></i>
-	</a>
-	<ul class="dropdown-menu">
-		<li><a href="professionals/therapists-and-counsellors.html">
-			Therapists and Counsellors Network
-		</a>
-	</li>
-	<li><a href="professionals/therapists-and-counsellors/training.html">
-		Therapists and Counsellors Training
-	</a>
-</li>
-<li><a href="professionals/therapists-and-counsellors/directory.html">
-	Therapists and Counsellors Directory
-</a>
-</li>
-</ul>
-</li>
-<li class="dropdown">
-	<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-
-		About Us
-		<i class="icon-chevron-down"></i>
-	</a>
-	<ul class="dropdown-menu">
-		<li><a href="about-us/our-aims.html">
-			About GI
-		</a>
-	</li>
-	<li><a href="about-us/the-team.html">
-		<i class="icon-subway pull-right"></i>
-		Meet the team
-	</a>
-</li>
-<li><a href="about-us/team-blog.html">
-	Team blog
-</a>
-</li>
-<li><a href="about/join-the-team.html">
-	Join the team
-</a>
-</li>
-<li><a href="about-us/reports-and-resources.html">
-	<i class="icon-book pull-right"></i>
-	Reports & Resources
-</a>
-</li>
-<li><a href="data.html">
-	Data Protection
-</a>
-</li>
-<li><a href="safeguarding.html">
-	Safeguarding
-</a>
-</li>
-<li><a href="about/conferences.html">
-	Conferences
-</a>
-</li>
-</ul>
-</li>
-<li class="dropdown">
-	<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-
-		Contact
-		<i class="icon-chevron-down"></i>
-	</a>
-	<ul class="dropdown-menu">
-		<li><a href="contact/email.html">
-			<i class="icon-envelope pull-right"></i>
-			Email
-		</a>
-	</li>
-	<li><a href="contact/mailing-list.html">
-		<i class="icon-envelope-alt pull-right"></i>
-		Mailing List
-	</a>
-</li>
-<li><a href="http://www.facebook.com/GenderedIntelligence">
-	<i class="icon-facebook pull-right"></i>
-	Facebook
-</a>
-</li>
-<li><a href="http://twitter.com/genderintell">
-	<i class="icon-twitter pull-right"></i>
-	Twitter
-</a>
-</li>
-<li><a href="contact/office.html">
-	Office Details
-</a>
-</li>
-<li><a href="contact/media.html">
-	Media Enquiries
-</a>
-</li>
-<li><a href="contact/casting.html">
-	Casting Calls
-</a>
-</li>
-</ul>
-</li>
-<li class="">
-	<a href="projects/supportline.html">
-
-		Support Line
-		<i class="icon-phone"></i>
-	</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
 
 <div class="content">
 	{{ content }}
