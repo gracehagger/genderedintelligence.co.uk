@@ -5,7 +5,7 @@
      - page: Latest news
        url: latest.html
      - page: Blog
-       url: https://genderedintelligence.wordpress.com/
+       url: "https://genderedintelligence.wordpress.com/"
      - page: Awareness Days
        url: awarenessdays.html
 - page: Support us
@@ -117,7 +117,7 @@
      - page: GIANTS
        url: projects/GIANTS.html
      - page: TransActing
-       url: http://transacting.co.uk/
+       url: "http://transacting.co.uk/"
      - page: The Corpse Project
        url: projects/the-corpse-project.html
      - page: Quality of Life Survey
@@ -148,7 +148,7 @@
        url: about-us/the-team.html
        icon: icon-subway
      - page: Team blog
-       url: about-us/team-blog.html
+       url: "https://genderedintelligence.wordpress.com/"
      - page: Join the team
        url: about/join-the-team.html
      - page: Reports & Resources
