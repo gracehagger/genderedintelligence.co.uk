@@ -1,0 +1,55 @@
+backend:
+   name: github
+   repo: GenderedIntelligence/genderedintelligence.co.uk
+   site_domain: competent-lamport-0d07fb.netlify.com
+   branch: main
+   base_url: "https://api.netlify.com"
+   auth_endpoint: auth
+   api_root: "https://api.github.com"
+media_folder: static/images
+collections:
+   - label: Pages
+     name: pages
+     label_singular: "Page"
+     extension: html
+     folder: /
+     create: true
+     nested:
+        depth: 10 # max depth to show in the collection tree
+        summary: "/{{filename}}" # optional summary for a tree node, defaults to the inferred title field
+     fields:
+        - label: Title
+          name: title
+          widget: string
+        - label: Content
+          name: content
+          widget: text
+   - name: config
+     label: Config
+     editor:
+        preview: false
+     files:
+        - label: Navigation
+          name: navigation
+          file: _data/navigation.yml
+          fields:
+             - label: Navigation Items
+               name: items
+               widget: list
+               fields:
+                  - label: Page
+                    name: page
+                    widget: string
+                  - label: URL
+                    name: url
+                    widget: string
+                  # - label: Subnav
+                  #   name: subnav
+                  #   widget: list
+                  #   fields:
+                  #      - label: Page
+                  #        name: page
+                  #        widget: string
+                  #      - label: URL
+                  #        name: url
+                  #        widget: string

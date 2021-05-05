@@ -1,185 +1,186 @@
-- page: Home
-  url: index.html
-- page: What's New
-  subnav:
-     - page: Latest news
-       url: latest.html
-     - page: Blog
-       url: "https://genderedintelligence.wordpress.com/"
-     - page: Awareness Days
-       url: awarenessdays.html
-- page: Support us
-  subnav:
-     - page: Donate
-       url: support-us/donate.html
-       icon: icon-gift
-     - page: Volunteer
-       url: support-us/volunteer.html
-       icon: icon-heart
-     - page: Youth Group Volunteer
-       url: support-us/youthgroupvolunteer.html
-     - page: Funding
-       url: support-us/funding.html
-- page: COVID-19
-  subnav:
-     - page: Resources Hub
-       url: resources/covid19.html
-       icon: icon-star
-     - page: Updates
-       url: covid19/index.html
-- page: Campaigns
-  subnav:
-     - page: Our Campaigns
-       url: ourcampaigns.html
-     - page: BAEB
-       url: campaigns/baeb.html
-     - page: Briefings and guides
-       url: briefings.html
-     - page: Facing Equality
-       url: facingequality.html
-     - page: Trans Writes! (Gender Recognition Act)
-       url: gra/whatnow.html
-     - page: "#TRUSSTME - don't roll back on trans rights"
-       url: trusstus/write.html
-     - page: Women and Equalities Inquiry into the Gender Recognition Act
-       url: campaigns/wesc2020.html
-     - page: Our responses to the GRA
-       url: gra/ourresponse.html
-- page: Young People & Families
-  icon: icon-heart
-  subnav:
-     - page: Support for Young People
-       url: support/trans-youth.html
-       icon: icon-star
-     - page: Youth Groups for Young Trans and Gender Variant People
-       url: trans-youth/youth-group.html
-     - page: Resources for Young People
-       url: trans-youth/resources.html
-     - page: Camping Trips
-       url: camping.html
-     - page: Support for Families
-       url: families/group.html
-     - page: Resources for Families
-       url: support/families-resources.html
-     - page: Parents' Workshop
-       url: parent-workshop.html
-     - page: Support for Teachers and Schools
-       url: support/education-schools.html
-     - page: NEW Residential Resource
-       url: residential-resource.html
-- page: For Professionals
-  subnav:
-     - page: Overview of Services
-       url: professionals/overview.html
-     - page: Consultancy - Trans Inclusion and Equality
-       url: professionals/policy.html
-     - page: Online training and remote services
-       url: onlinecourses.html
-     - page: Training
-       url: professionals/training.html
-     - page: Speakers and Panellists
-       url: professionals/speakers.html
-     - page: Education & Other Youth Settings
-       url: professionals/education.html
-     - page: Mentoring Scheme
-       url: professionals/mentoring.html
-     - page: Partnerships
-       url: professionals/partnerships.html
-     - page: Sport and Physical Activity
-       url: sport.html
-     - page: Resources
-       icon: icon-book
-       url: for-professionals/resources.html
-     - page: Professional Services Mailing List
-       url: professionals/mailinglist.html
-       icon: icon-envelope-alt
-- page: Educational Settings
-  subnav:
-     - page: Overview
-       url: support/education-schools.html
-       icon: icon-book
-     - page: Workshops and Assemblies
-       url: professionals/schools-and-youth-services/creative-workshops.html
-     - page: Mentoring
-       url: professionals/mentoring.html
-     - page: Training
-       url: education/training.html
-     - page: Professional Consultancy
-       url: education/professional-consultancy.html
-- page: Projects
-  subnav:
-     - page: Support Line
-       url: projects/supportline.html
-     - page: Adventures in Time and Gender
-       url: AdventuresTimeGender.html
-     - page: Knowledge is Power
-       url: projects/kip.html
-     - page: GIANTS
-       url: projects/GIANTS.html
-     - page: TransActing
-       url: "http://transacting.co.uk/"
-     - page: The Corpse Project
-       url: projects/the-corpse-project.html
-     - page: Quality of Life Survey
-       url: quality-of-life-survey.html
-     - page: "Collective Resilience: 18-30 Therapy Group"
-       url: projects/collective-resilience.html
-     - page: Trans Inclusion in Sport
-       url: project/trans-inclusion-in-sport.html
-     - page: Imagining Our Futures 2020
-       url: projects/iof2020.html
-     - page: Transvengers at the Wellcome Collection
-       url: transvengers.html
-     - page: Previous Projects
-       url: projects/project-list.html
-- page: Therapists and Counsellors
-  subnav:
-     - page: Therapists and Counsellors Network
-       url: professionals/therapists-and-counsellors.html
-     - page: Therapists and Counsellors Training
-       url: professionals/therapists-and-counsellors/training.html
-     - page: Therapists and Counsellors Directory
-       url: professionals/therapists-and-counsellors/directory.html
-- page: About Us
-  subnav:
-     - page: About GI
-       url: about-us/our-aims.html
-     - page: Meet the team
-       url: about-us/the-team.html
-       icon: icon-subway
-     - page: Team blog
-       url: "https://genderedintelligence.wordpress.com/"
-     - page: Join the team
-       url: about/join-the-team.html
-     - page: Reports & Resources
-       url: about-us/reports-and-resources.html
-       icon: icon-book
-     - page: Data Protection
-       url: data.html
-     - page: Safeguarding
-       url: safeguarding.html
-     - page: Conferences
-       url: about/conferences.html
-- page: Contact
-  subnav:
-     - page: Email
-       url: contact/email.html
-       icon: icon-envelope
-     - page: Mailing List
-       url: contact/mailing-list.html
-       icon: icon-envelope-alt
-     - page: Facebook
-       url: "http://www.facebook.com/GenderedIntelligence"
-       icon: icon-facebook
-     - page: Twitter
-       icon: icon-twitter
-       url: http://twitter.com/genderintell
-     - page: Office Details
-       url: contact/office.html
-     - page: Media Enquiries
-       url: contact/media.html
-     - page: Casting Calls
-       url: contact/casting.html
-- page: Support Line
-  url: projects/supportline.html
-  icon: icon-phone
+items:
+   - page: Home
+     url: index.html
+   - page: What's New
+     subnav:
+        - page: Latest news
+          url: latest.html
+        - page: Blog
+          url: "https://genderedintelligence.wordpress.com/"
+        - page: Awareness Days
+          url: awarenessdays.html
+   - page: Support us
+     subnav:
+        - page: Donate
+          url: support-us/donate.html
+          icon: icon-gift
+        - page: Volunteer
+          url: support-us/volunteer.html
+          icon: icon-heart
+        - page: Youth Group Volunteer
+          url: support-us/youthgroupvolunteer.html
+        - page: Funding
+          url: support-us/funding.html
+   - page: COVID-19
+     subnav:
+        - page: Resources Hub
+          url: resources/covid19.html
+          icon: icon-star
+        - page: Updates
+          url: covid19/index.html
+   - page: Campaigns
+     subnav:
+        - page: Our Campaigns
+          url: ourcampaigns.html
+        - page: BAEB
+          url: campaigns/baeb.html
+        - page: Briefings and guides
+          url: briefings.html
+        - page: Facing Equality
+          url: facingequality.html
+        - page: Trans Writes! (Gender Recognition Act)
+          url: gra/whatnow.html
+        - page: "#TRUSSTME - don't roll back on trans rights"
+          url: trusstus/write.html
+        - page: Women and Equalities Inquiry into the Gender Recognition Act
+          url: campaigns/wesc2020.html
+        - page: Our responses to the GRA
+          url: gra/ourresponse.html
+   - page: Young People & Families
+     icon: icon-heart
+     subnav:
+        - page: Support for Young People
+          url: support/trans-youth.html
+          icon: icon-star
+        - page: Youth Groups for Young Trans and Gender Variant People
+          url: trans-youth/youth-group.html
+        - page: Resources for Young People
+          url: trans-youth/resources.html
+        - page: Camping Trips
+          url: camping.html
+        - page: Support for Families
+          url: families/group.html
+        - page: Resources for Families
+          url: support/families-resources.html
+        - page: Parents' Workshop
+          url: parent-workshop.html
+        - page: Support for Teachers and Schools
+          url: support/education-schools.html
+        - page: NEW Residential Resource
+          url: residential-resource.html
+   - page: For Professionals
+     subnav:
+        - page: Overview of Services
+          url: professionals/overview.html
+        - page: Consultancy - Trans Inclusion and Equality
+          url: professionals/policy.html
+        - page: Online training and remote services
+          url: onlinecourses.html
+        - page: Training
+          url: professionals/training.html
+        - page: Speakers and Panellists
+          url: professionals/speakers.html
+        - page: Education & Other Youth Settings
+          url: professionals/education.html
+        - page: Mentoring Scheme
+          url: professionals/mentoring.html
+        - page: Partnerships
+          url: professionals/partnerships.html
+        - page: Sport and Physical Activity
+          url: sport.html
+        - page: Resources
+          icon: icon-book
+          url: for-professionals/resources.html
+        - page: Professional Services Mailing List
+          url: professionals/mailinglist.html
+          icon: icon-envelope-alt
+   - page: Educational Settings
+     subnav:
+        - page: Overview
+          url: support/education-schools.html
+          icon: icon-book
+        - page: Workshops and Assemblies
+          url: professionals/schools-and-youth-services/creative-workshops.html
+        - page: Mentoring
+          url: professionals/mentoring.html
+        - page: Training
+          url: education/training.html
+        - page: Professional Consultancy
+          url: education/professional-consultancy.html
+   - page: Projects
+     subnav:
+        - page: Support Line
+          url: projects/supportline.html
+        - page: Adventures in Time and Gender
+          url: AdventuresTimeGender.html
+        - page: Knowledge is Power
+          url: projects/kip.html
+        - page: GIANTS
+          url: projects/GIANTS.html
+        - page: TransActing
+          url: "http://transacting.co.uk/"
+        - page: The Corpse Project
+          url: projects/the-corpse-project.html
+        - page: Quality of Life Survey
+          url: quality-of-life-survey.html
+        - page: "Collective Resilience: 18-30 Therapy Group"
+          url: projects/collective-resilience.html
+        - page: Trans Inclusion in Sport
+          url: project/trans-inclusion-in-sport.html
+        - page: Imagining Our Futures 2020
+          url: projects/iof2020.html
+        - page: Transvengers at the Wellcome Collection
+          url: transvengers.html
+        - page: Previous Projects
+          url: projects/project-list.html
+   - page: Therapists and Counsellors
+     subnav:
+        - page: Therapists and Counsellors Network
+          url: professionals/therapists-and-counsellors.html
+        - page: Therapists and Counsellors Training
+          url: professionals/therapists-and-counsellors/training.html
+        - page: Therapists and Counsellors Directory
+          url: professionals/therapists-and-counsellors/directory.html
+   - page: About Us
+     subnav:
+        - page: About GI
+          url: about-us/our-aims.html
+        - page: Meet the team
+          url: about-us/the-team.html
+          icon: icon-subway
+        - page: Team blog
+          url: "https://genderedintelligence.wordpress.com/"
+        - page: Join the team
+          url: about/join-the-team.html
+        - page: Reports & Resources
+          url: about-us/reports-and-resources.html
+          icon: icon-book
+        - page: Data Protection
+          url: data.html
+        - page: Safeguarding
+          url: safeguarding.html
+        - page: Conferences
+          url: about/conferences.html
+   - page: Contact
+     subnav:
+        - page: Email
+          url: contact/email.html
+          icon: icon-envelope
+        - page: Mailing List
+          url: contact/mailing-list.html
+          icon: icon-envelope-alt
+        - page: Facebook
+          url: "http://www.facebook.com/GenderedIntelligence"
+          icon: icon-facebook
+        - page: Twitter
+          icon: icon-twitter
+          url: http://twitter.com/genderintell
+        - page: Office Details
+          url: contact/office.html
+        - page: Media Enquiries
+          url: contact/media.html
+        - page: Casting Calls
+          url: contact/casting.html
+   - page: Support Line
+     url: projects/supportline.html
+     icon: icon-phone
