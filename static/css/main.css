@@ -82,11 +82,11 @@ footer.container {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background: #fff;
+    background: #912884;
     background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(1, #fff));
     background: -ms-linear-gradient(bottom, #fff, #fff);
     background: -moz-linear-gradient(center bottom, #fff 0, #fff 100%);
-    background: #fff;
+    background: #912884;
     background-image: url("");
     background: url(""), -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(1, #fff));
     background: url(""), -ms-linear-gradient(bottom, #fff, #fff);
@@ -102,7 +102,7 @@ footer.container {
     padding: 9px 9px;
 }
 .navbar .nav li.active > a {
-    background-color: #912884;
+    background-color: #ffffff;
     color: #fff;
     text-shadow: 0 1px 0 #333;
 }
