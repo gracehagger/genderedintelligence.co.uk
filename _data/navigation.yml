@@ -9,6 +9,7 @@
      - page: Awareness Days
        url: awarenessdays.html
 - page: Support us
+  icon: angellist
   subnav:
      - page: Donate
        url: support-us/donate.html
