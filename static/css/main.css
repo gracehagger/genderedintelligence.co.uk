@@ -165,9 +165,9 @@ footer.container {
 .bottom-boxes .span7 {
     background: #912884;
     background-image: url("/static/images/box-background.png");
-    background: url("/static/images/box-background.png"), -webkit-gradient(linear, left bottom, left top, color-stop(0, #724989), color-stop(1, #992c7a));
-    background: url("/static/images/box-background.png"), -ms-linear-gradient(bottom, #724989, #992c7a);
-    background: url("/static/images/box-background.png"), -moz-linear-gradient(center bottom, #724989 0, #992c7a 100%);
+    background: url("/static/images/box-background.png"), -webkit-gradient(linear, left bottom, left top, color-stop(0, #f39639), color-stop(1, #ffb061));
+    background: url("/static/images/box-background.png"), -ms-linear-gradient(bottom, #f39639, #ffb061);
+    background: url("/static/images/box-background.png"), -moz-linear-gradient(center bottom, #f39639 0, #ffb061 100%);
     color: #fff;
     padding: 3px 10px 10px;
     margin-bottom: 5px;
